@@ -1,10 +1,5 @@
-const express = require ('express')
-const morgan = require ('morgan')
 
-const app = express()
-
-app.use(morgan('dev'))
-
-app.listen(3000)
-console.log('Server on port', 3000);
+const app = require('./app')
+app.listen(app.get('port'))
+console.log('Server on port', app.get('port'));
 
