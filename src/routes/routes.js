@@ -3,6 +3,6 @@ const router = Router()
 
 const controller = require('../controllers/controller.js')
 
-router.get('/hello', controller)
+router.get('/', controller.getControlador)
 
 module.exports = router
